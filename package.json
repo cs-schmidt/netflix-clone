@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "description": "A frontend-focused clone of Netflix.",
+  "homepage": "https://github.com/cs-schmidt/netflix-clone#readme",
+  "bugs": {
+    "url": "https://github.com/cs-schmidt/netflix-clone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs-schmidt/netflix-clone"
+  },
+  "license": "MIT",
+  "author": "Ethan Schmidt <ebs.euler@gmail.com> (https://cs-schmidt.dev/)",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "sort-package-json": "^2.5.1"
+  }
+}

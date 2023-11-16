@@ -1,0 +1,3 @@
+# Matches files in the git staging area (keys) and applies the commands (values)
+# with the files as input; keys use extended globbing.
+'package.json': 'sort-package-json' # sorts package.json file.
