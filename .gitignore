@@ -1,2 +1,9 @@
 # Build Ignores
 **/node_modules/
+public/
+
+# Service Ignores
+.firebase/
+
+# Secret Files
+.env
