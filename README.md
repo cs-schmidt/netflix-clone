@@ -7,6 +7,7 @@
 <!-- TODO: Add the description section after the full scope of the system is realized. -->
 
 ## License
+
 MIT License
 
 Copyright (c) 2023 Ethan Schmidt

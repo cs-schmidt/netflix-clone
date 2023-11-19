@@ -51,9 +51,7 @@
  * Many of the custom properties used in other style files are established here.
  */
 
-@import-normalize
-
-:root {
+@import-normalize :root {
   box-sizing: border-box;
 }
 
@@ -63,5 +61,5 @@
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-  font-family: 'Netflix Sans', assyrian;
+  font-family: 'Netflix Sans', assyrian, sans-serif;
 }

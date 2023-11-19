@@ -1,3 +1,6 @@
 # Matches files in the git staging area (keys) and applies the commands (values)
 # with the files as input; keys use extended globbing.
-'package.json': 'sort-package-json' # sorts package.json file.
+'package.json': 'sort-package-json' # sorts package.json the file
+'**/?(.)*.@([jt]s?(x)|[cm][jt]s)': 'eslint --fix' # lints js-type of ts-type files
+'**/*.?(s)css': 'stylelint --fix' # lints scss and css files
+'**/?(.)*': 'prettier --ignore-unknown --write' # formats all files prettier supports

@@ -1,0 +1,16 @@
+/**
+ * Client-Side TypeScript Configuration
+ *
+ * This file is not used by the build system, it only exists to support linting
+ * with ESLint. In particular it's used by @typescript-eslint/parser.
+ *
+ * NOTE: File uses JSONC format, see "https://www.typescriptlang.org/tsconfig"
+ *       for all configuration options.
+ */
+
+{
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "strict": true
+  }
+}
