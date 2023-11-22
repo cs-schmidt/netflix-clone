@@ -1,57 +1,11 @@
-/**
- * Fonts
- *
- * Defines all of the fonts used throughout the application.
- */
+/* ==========================================================================
+   App-Wide Styles
+   ========================================================================== */
 
-/* Netflix Sans Light */
-@font-face {
-  font-family: 'Netflix Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: url('./assets/fonts/netflix-sans/netflix-sans-300.otf')
-    format('opentype');
-  font-display: auto;
-}
+@use '_fonts.scss';
+@import-normalize;
 
-/* Netflix Sans Regular */
-@font-face {
-  font-family: 'Netflix Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/netflix-sans/netflix-sans-400.otf')
-    format('opentype');
-  font-display: auto;
-}
-
-/* Netflix Sans Medium */
-@font-face {
-  font-family: 'Netflix Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: url('./assets/fonts/netflix-sans/netflix-sans-500.otf')
-    format('opentype');
-  font-display: auto;
-}
-
-/* Netflix Sans Bold */
-@font-face {
-  font-family: 'Netflix Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./assets/fonts/netflix-sans/netflix-sans-700.otf')
-    format('opentype');
-  font-display: auto;
-}
-
-/**
- * Base Styles
- *
- * Contains global-level styling that applies across the entire application.
- * Many of the custom properties used in other style files are established here.
- */
-
-@import-normalize :root {
+:root {
   box-sizing: border-box;
 }
 
@@ -62,4 +16,8 @@
   padding: 0;
   margin: 0;
   font-family: 'Netflix Sans', assyrian, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }

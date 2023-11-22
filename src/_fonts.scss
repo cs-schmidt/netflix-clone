@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Font Declarations
+   ========================================================================== */
+
+/* Contains declarations for all of the fonts used across the application. */
+
+/* Netflix Sans Light */
+@font-face {
+  font-family: 'Netflix Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/netflix-sans/netflix-sans-300.otf')
+    format('opentype');
+  font-display: auto;
+}
+
+/* Netflix Sans Regular */
+@font-face {
+  font-family: 'Netflix Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/netflix-sans/netflix-sans-400.otf')
+    format('opentype');
+  font-display: auto;
+}
+
+/* Netflix Sans Medium */
+@font-face {
+  font-family: 'Netflix Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/netflix-sans/netflix-sans-500.otf')
+    format('opentype');
+  font-display: auto;
+}
+
+/* Netflix Sans Bold */
+@font-face {
+  font-family: 'Netflix Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/netflix-sans/netflix-sans-700.otf')
+    format('opentype');
+  font-display: auto;
+}

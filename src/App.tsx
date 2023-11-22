@@ -1,12 +1,23 @@
 import React from 'react';
-import Logo from './assets/images/netflix-logo.svg';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider
+} from 'react-router-dom';
 import './App.scss';
+import Home from './pages/Home';
+import Credits from './components/Credits';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route path="/" element={<Home />} />)
+);
 
 export default function App() {
   return (
-    <h1>
-      <Logo />
-      Netflix Clone
-    </h1>
+    <>
+      <RouterProvider router={router} />
+      <Credits />
+    </>
   );
 }

@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Background Styles
+   ========================================================================== */
+
+.bg {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg__img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.25) translateY(-10%);
+  object-fit: cover;
+}
+
+.bg__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 40%);
+  background-image: linear-gradient(
+    to top,
+    rgb(0 0 0 / 80%) 0,
+    rgb(0 0 0 / 0%) 60%,
+    rgb(0 0 0 / 80%) 100%
+  );
+}

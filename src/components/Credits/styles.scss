@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Credits Component Styles
+   ========================================================================== */
+
+.credits {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 16px 24px;
+  color: white;
+  background-color: black;
+  transition: transform 200ms ease-in;
+  transform: translateY(100%);
+
+  &--active {
+    transform: translateY(0);
+  }
+}
+
+.credits__heading {
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #282c2d;
+}
+
+.credits__section-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.credits__section {
+  display: flex;
+  column-gap: 1rem;
+  align-items: flex-start;
+
+  &-logo {
+    width: 50px;
+  }
+
+  &-description {
+    font-size: 0.75rem;
+  }
+}
+
+.credits__toggle {
+  position: absolute;
+  top: -24px;
+  right: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: none !important;
+  opacity: 0.5;
+  transition-timing-function: ease-out;
+  transition-duration: 250ms;
+  transition-property: opacity, transform;
+  translate: 0 -100%;
+
+  &-icon {
+    font-size: 24px;
+    color: white;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}

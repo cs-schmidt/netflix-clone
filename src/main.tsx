@@ -3,5 +3,5 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import './services/firebase';
 
-const reactRoot = createRoot(document.getElementById('root') as HTMLElement);
-reactRoot.render(<App />);
+const rootElement = document.querySelector('#root') as HTMLElement;
+createRoot(rootElement).render(<App />);

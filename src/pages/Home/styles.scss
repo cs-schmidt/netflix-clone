@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Home Page Styles
+   ========================================================================== */
+
+@use '../../vars' as v;
+
+.pg-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: rgb(255 255 255);
+}
+
+.pg-home *:focus {
+  outline: 0.125rem solid white;
+  outline-offset: 0.125rem;
+}
+
+.onboard__wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.onboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: calc(100% - 3rem);
+  text-align: center;
+}
+
+.onboard__heading {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.onboard__subheading {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.onboard__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 61.5rem;
+  padding: 0 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.onboard__form-heading {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.onboard__form-control-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  column-gap: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 36.625rem;
+  margin: 1rem auto 0;
+  text-align: left;
+}
+
+.onboard__form-control-wrapper {
+  width: 100%;
+}
+
+.onboard__form-control {
+  position: relative;
+  width: 100%;
+}
+
+.onboard__form-control > label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(255 255 255 / 70%);
+  pointer-events: none;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+  transition-duration: 150ms;
+  transition-property: top, font-size;
+}
+
+.onboard__form-control > input {
+  width: 100%;
+  min-width: 12.5rem;
+  min-height: 3.5rem;
+  padding: 1.5rem 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  background: rgb(22 22 22 / 70%);
+  border: 1px solid rgb(128 128 128 / 70%);
+  border-radius: 0.25rem;
+}
+
+.onboard__form-control--active > label {
+  top: 0.5rem;
+  font-size: 0.75rem;
+  transform: translateY(0);
+}
+
+.onboard__form-submit {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  column-gap: 6px;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+  color: rgb(255 255 255);
+  cursor: pointer;
+  user-select: none;
+  background: rgb(229 9 20);
+  border: none;
+  border-radius: 0.25rem;
+  transition: background-color 250ms cubic-bezier(0.9, 0, 0.51, 1);
+
+  &:hover {
+    background: rgb(193 17 25);
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+
+  &:active {
+    background: rgb(153 22 29);
+    transition: none;
+  }
+}
+
+@media (width >= 600px) {
+  .onboard__form-control-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .onboard__form-submit {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (width >= 960px) {
+  .onboard__heading {
+    font-size: 3rem;
+  }
+
+  .onboard__subheading {
+    font-size: 1.5rem;
+  }
+}

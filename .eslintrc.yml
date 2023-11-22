@@ -36,3 +36,5 @@ overrides:
           config: 'webpack.base.cjs'
           env:
             NODE_ENV: 'production'
+    rules:
+      jsx-a11y/label-has-associated-control: ['error', assert: 'either']
